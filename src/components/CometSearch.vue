@@ -1,16 +1,16 @@
 <template>
     <div>
-        <div>
-            <b-navbar toggleable="lg" class="navbarTop" sticky style="border: 2px solid red; width: available !important;">
-                <b-container style="border: 2px solid cornflowerblue">
-                    <b-row style="width: inherit !important; justify-content: space-between !important;">
-                        <b-col style="align-self: auto">
+        <div style="position: relative">
+            <b-navbar toggleable="lg" class="navbarTop" sticky style="border: 2px solid red; width: 100% !important;">
+                <div style="border: 2px solid cornflowerblue; width: 100%">
+                    <div style="width: inherit !important; justify-content: space-between !important; display: flex">
+                        <div style="align-self: auto">
                             <b-navbar-brand href="#"><img src="../assets/img/home_icon_48px.png" height="24" width="24" alt="Home icon"/></b-navbar-brand>
-                        </b-col>
-                        <b-col style="align-self: center">
+                        </div>
+                        <div style="align-self: center">
                             <b-img src="https://raw.githubusercontent.com/christianvajgel/spa_c_assets/master/images/logo_nav_header_100px.png" height="33" width="100" alt="spac logo navigation header"></b-img>
-                        </b-col>
-                        <b-col style="align-self: center">
+                        </div>
+                        <div style="align-self: center">
                             <b-dropdown class="b-dropdown" size="sm" variant="outline-dark" toggle-class="text-decoration-none" no-caret dropleft>
                             <template v-slot:button-content>
                                 <img src="https://raw.githubusercontent.com/christianvajgel/spa_c_assets/master/images/menu_icon_48px.png" height="24" width="24" alt="spac brand logo"/>
@@ -30,9 +30,9 @@
                             <b-dropdown-item href="#">Current Location</b-dropdown-item>
                             <b-dropdown-item href="#">Pass Predictions</b-dropdown-item>
                             <b-dropdown-item href="#">Animated Map</b-dropdown-item>
-                        </b-dropdown></b-col>
-                    </b-row>
-                </b-container>
+                        </b-dropdown></div>
+                    </div>
+                </div>
 
 
 <!--                <b-navbar-nav class="ml-auto" style="border: 2px solid cornflowerblue; flex-direction: row !important; justify-content: space-between !important">-->
