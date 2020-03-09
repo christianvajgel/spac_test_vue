@@ -1,22 +1,13 @@
 <template>
   <div id="app">
-      <Home/>
-      <CometSearch/>
-<!--    <img alt="Vue logo" src="./assets/logo.png">-->
-
+      <router-view/>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
-import CometSearch from "@/components/CometSearch";
 
 export default {
   name: 'App',
-  components: {
-      CometSearch,
-    Home
-  }
 }
 </script>
 
